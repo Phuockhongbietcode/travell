@@ -107,7 +107,7 @@
 
                     .grade{
                         color: var(--textColor);
-                        max-width: 100px;
+                        max-width: 300px;
                         line-height: 20px;
                         display: flex;
                         align-items: center;
@@ -149,6 +149,42 @@
                 }
             }
 
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .title{
+        font-size: 1.5rem;
+
+        &::after{
+            width: 155px !important;
+        }
+    }
+
+    .secContent{
+        grid-template-columns: repeat(2,1fr);
+
+        .singleDestination{
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .title{
+        font-size: 1.5rem;
+
+        &::after{
+            width: 155px !important;
+        }
+    }
+
+    .secContent{
+        grid-template-columns: repeat(3,1fr);
+
+        .singleDestination{
+            height: auto;
         }
     }
 }
